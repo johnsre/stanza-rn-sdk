@@ -4,6 +4,9 @@
     "paths": {
       "stanza-rn-sdk": ["./src/index"]
     },
+    "typeRoots": [
+      "./example/src/types",
+    ],
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,

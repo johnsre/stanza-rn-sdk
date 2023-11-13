@@ -1,27 +1,13 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'stanza-rn-sdk';
-
-const result = multiply(3, 7);
+import { StanzaProvider } from 'stanza-rn-sdk';
+import { config } from './stanzaConfig';
+import Main from './screens/Main';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <StanzaProvider config={config}>
+      <Main />
+    </StanzaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
-});

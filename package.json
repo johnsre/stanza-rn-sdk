@@ -163,5 +163,8 @@
     "name": "RNStanzaRnSdkSpec",
     "type": "modules",
     "jsSrcsDir": "src"
+  },
+  "dependencies": {
+    "@getstanza/core": "^0.0.5-beta"
   }
 }
